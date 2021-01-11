@@ -34,7 +34,8 @@ FORMS += \
         mainwindow.ui
 
 RESOURCES += \
-    lib.qrc
+    walllib.qrc
 
 win32:LIBS += -luser32
 
+CONFIG += resources_big

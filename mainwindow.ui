@@ -6,19 +6,19 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1119</width>
+    <width>1068</width>
     <height>672</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>1119</width>
+    <width>1068</width>
     <height>672</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>1119</width>
+    <width>1064</width>
     <height>672</height>
    </size>
   </property>
@@ -30,139 +30,543 @@
     <normaloff>lib/wall.png</normaloff>lib/wall.png</iconset>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,20">
-    <property name="spacing">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1061</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string>选择资源</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_2">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>21</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="minimumSize">
+        <size>
+         <width>70</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>选择契合度：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox">
+       <property name="minimumSize">
+        <size>
+         <width>78</width>
+         <height>22</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>填充</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>适应</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>拉伸</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>平铺</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>居中</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="text">
+        <string>使用壁纸</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>30</y>
+      <width>1071</width>
+      <height>641</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
      <number>0</number>
     </property>
-    <property name="leftMargin">
-     <number>0</number>
-    </property>
-    <property name="topMargin">
-     <number>0</number>
-    </property>
-    <property name="rightMargin">
-     <number>0</number>
-    </property>
-    <property name="bottomMargin">
-     <number>0</number>
-    </property>
-    <item>
-     <layout class="QHBoxLayout" name="horizontalLayout">
-      <property name="spacing">
-       <number>0</number>
+    <widget class="QWidget" name="tab_1">
+     <attribute name="title">
+      <string>静态壁纸</string>
+     </attribute>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1061</width>
+        <height>641</height>
+       </rect>
       </property>
-      <item>
-       <widget class="QPushButton" name="pushButton">
-        <property name="text">
-         <string>选择资源</string>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>-380</y>
+         <width>1042</width>
+         <height>1019</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>1019</height>
+        </size>
+       </property>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>10</y>
+          <width>271</width>
+          <height>151</height>
+         </rect>
         </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLineEdit" name="lineEdit_2">
-        <property name="minimumSize">
+        <property name="maximumSize">
          <size>
-          <width>0</width>
-          <height>21</height>
+          <width>55555</width>
+          <height>555555</height>
          </size>
         </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLineEdit" name="lineEdit">
-        <property name="minimumSize">
-         <size>
-          <width>0</width>
-          <height>21</height>
-         </size>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLabel" name="label_2">
-        <property name="minimumSize">
-         <size>
-          <width>70</width>
-          <height>0</height>
-         </size>
-        </property>
-        <property name="text">
-         <string>选择契合度：</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QComboBox" name="comboBox">
-        <property name="minimumSize">
-         <size>
-          <width>78</width>
-          <height>22</height>
-         </size>
-        </property>
-        <item>
-         <property name="text">
-          <string>填充</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>适应</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>拉伸</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>平铺</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>居中</string>
-         </property>
-        </item>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButton_2">
-        <property name="text">
-         <string>使用壁纸</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
-    <item>
-     <layout class="QVBoxLayout" name="verticalLayout">
-      <item>
-       <widget class="QLabel" name="label">
         <property name="styleSheet">
-         <string notr="true"/>
+         <string notr="true">background-color: rgb(187, 170, 255);
+border-image: url(:/lib/2007786.jpg);</string>
         </property>
         <property name="text">
          <string/>
         </property>
        </widget>
-      </item>
-      <item>
-       <spacer name="verticalSpacer">
-        <property name="orientation">
-         <enum>Qt::Vertical</enum>
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>170</y>
+          <width>271</width>
+          <height>151</height>
+         </rect>
         </property>
-        <property name="sizeHint" stdset="0">
+        <property name="maximumSize">
          <size>
-          <width>20</width>
-          <height>40</height>
+          <width>55555</width>
+          <height>555555</height>
          </size>
         </property>
-       </spacer>
-      </item>
-     </layout>
-    </item>
-   </layout>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(187, 170, 255);
+border-image: url(:/lib/2033165.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>10</y>
+          <width>491</width>
+          <height>311</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>55555</width>
+          <height>555555</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(187, 170, 255);
+border-image: url(:/lib/2038116.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_7">
+        <property name="geometry">
+         <rect>
+          <x>780</x>
+          <y>10</y>
+          <width>271</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>55555</width>
+          <height>555555</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(187, 170, 255);
+border-image: url(:/lib/2038308.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>780</x>
+          <y>170</y>
+          <width>271</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>55555</width>
+          <height>555555</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(187, 170, 255);
+border-image: url(:/lib/2038121.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>330</y>
+          <width>491</width>
+          <height>311</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>55555</width>
+          <height>555555</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(187, 170, 255);
+border-image: url(:/lib/2038608.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_9">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>490</y>
+          <width>271</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>55555</width>
+          <height>555555</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(187, 170, 255);
+border-image: url(:/lib/2038610.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_10">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>330</y>
+          <width>271</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>55555</width>
+          <height>555555</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(187, 170, 255);
+border-image: url(:/lib/2039758.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_11">
+        <property name="geometry">
+         <rect>
+          <x>780</x>
+          <y>330</y>
+          <width>271</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>55555</width>
+          <height>555555</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(187, 170, 255);
+border-image: url(:/lib/2039857.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_12">
+        <property name="geometry">
+         <rect>
+          <x>780</x>
+          <y>490</y>
+          <width>271</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>55555</width>
+          <height>555555</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(187, 170, 255);
+border-image: url(:/lib/2039639.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>20</y>
+          <width>341</width>
+          <height>300</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>300</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(189, 74, 255);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_13">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>650</y>
+          <width>271</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>55555</width>
+          <height>555555</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/lib/2035571.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_14">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>650</y>
+          <width>271</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>55555</width>
+          <height>555555</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/lib/2035575.jpg);
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_15">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>810</y>
+          <width>271</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>55555</width>
+          <height>555555</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/lib/2036148.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_16">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>810</y>
+          <width>271</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>55555</width>
+          <height>555555</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(187, 170, 255);
+border-image: url(:/lib/2035655.jpg);
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_17">
+        <property name="geometry">
+         <rect>
+          <x>560</x>
+          <y>650</y>
+          <width>491</width>
+          <height>311</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>55555</width>
+          <height>555555</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/lib/2035706.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_18">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>962</y>
+          <width>1041</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/lib/line.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <zorder>label</zorder>
+       <zorder>label_3</zorder>
+       <zorder>label_5</zorder>
+       <zorder>label_4</zorder>
+       <zorder>label_7</zorder>
+       <zorder>label_6</zorder>
+       <zorder>label_8</zorder>
+       <zorder>label_9</zorder>
+       <zorder>label_10</zorder>
+       <zorder>label_11</zorder>
+       <zorder>label_12</zorder>
+       <zorder>label_13</zorder>
+       <zorder>label_14</zorder>
+       <zorder>label_15</zorder>
+       <zorder>label_16</zorder>
+       <zorder>label_17</zorder>
+       <zorder>label_18</zorder>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>动态壁纸</string>
+     </attribute>
+    </widget>
+   </widget>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>

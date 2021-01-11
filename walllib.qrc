@@ -1,0 +1,28 @@
+<RCC>
+    <qresource prefix="/">
+        <file>lib/2007786.jpg</file>
+        <file>lib/2033165.jpg</file>
+        <file>lib/2038116.jpg</file>
+        <file>lib/2038121.jpg</file>
+        <file>lib/2038308.jpg</file>
+        <file>lib/2038608.jpg</file>
+        <file>lib/2038610.jpg</file>
+        <file>lib/2038763.jpg</file>
+        <file>lib/2039639.jpg</file>
+        <file>lib/2039758.jpg</file>
+        <file>lib/2039773.jpg</file>
+        <file>lib/2039856.jpg</file>
+        <file>lib/2039857.jpg</file>
+        <file>lib/wall.png</file>
+        <file>lib/2035571.jpg</file>
+        <file>lib/2035575.jpg</file>
+        <file>lib/2035655.jpg</file>
+        <file>lib/2036148.jpg</file>
+        <file>lib/2035706.jpg</file>
+        <file>lib/2036157.jpg</file>
+        <file>lib/2036262.jpg</file>
+        <file>lib/2036298.jpg</file>
+        <file>lib/2036268.jpg</file>
+        <file>lib/line.png</file>
+    </qresource>
+</RCC>

@@ -20,8 +20,8 @@
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QSpacerItem>
-#include <QtWidgets/QVBoxLayout>
+#include <QtWidgets/QScrollArea>
+#include <QtWidgets/QTabWidget>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -30,62 +30,74 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralWidget;
-    QVBoxLayout *verticalLayout_2;
+    QWidget *layoutWidget;
     QHBoxLayout *horizontalLayout;
     QPushButton *pushButton;
     QLineEdit *lineEdit_2;
-    QLineEdit *lineEdit;
     QLabel *label_2;
     QComboBox *comboBox;
     QPushButton *pushButton_2;
-    QVBoxLayout *verticalLayout;
+    QTabWidget *tabWidget;
+    QWidget *tab_1;
+    QScrollArea *scrollArea;
+    QWidget *scrollAreaWidgetContents;
+    QLabel *label_3;
+    QLabel *label_5;
+    QLabel *label_4;
+    QLabel *label_7;
+    QLabel *label_6;
+    QLabel *label_8;
+    QLabel *label_9;
+    QLabel *label_10;
+    QLabel *label_11;
+    QLabel *label_12;
     QLabel *label;
-    QSpacerItem *verticalSpacer;
+    QLabel *label_13;
+    QLabel *label_14;
+    QLabel *label_15;
+    QLabel *label_16;
+    QLabel *label_17;
+    QLabel *label_18;
+    QWidget *tab_2;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(1119, 672);
-        MainWindow->setMinimumSize(QSize(1119, 672));
-        MainWindow->setMaximumSize(QSize(1119, 672));
+        MainWindow->resize(1068, 672);
+        MainWindow->setMinimumSize(QSize(1068, 672));
+        MainWindow->setMaximumSize(QSize(1064, 672));
         QIcon icon;
         icon.addFile(QStringLiteral("lib/wall.png"), QSize(), QIcon::Normal, QIcon::Off);
         MainWindow->setWindowIcon(icon);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
-        verticalLayout_2 = new QVBoxLayout(centralWidget);
-        verticalLayout_2->setSpacing(0);
-        verticalLayout_2->setContentsMargins(11, 11, 11, 11);
-        verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
-        verticalLayout_2->setContentsMargins(0, 0, 0, 0);
-        horizontalLayout = new QHBoxLayout();
+        layoutWidget = new QWidget(centralWidget);
+        layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
+        layoutWidget->setGeometry(QRect(0, 0, 1061, 31));
+        horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setSpacing(0);
+        horizontalLayout->setContentsMargins(11, 11, 11, 11);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
-        pushButton = new QPushButton(centralWidget);
+        horizontalLayout->setContentsMargins(0, 0, 0, 0);
+        pushButton = new QPushButton(layoutWidget);
         pushButton->setObjectName(QStringLiteral("pushButton"));
 
         horizontalLayout->addWidget(pushButton);
 
-        lineEdit_2 = new QLineEdit(centralWidget);
+        lineEdit_2 = new QLineEdit(layoutWidget);
         lineEdit_2->setObjectName(QStringLiteral("lineEdit_2"));
         lineEdit_2->setMinimumSize(QSize(0, 21));
 
         horizontalLayout->addWidget(lineEdit_2);
 
-        lineEdit = new QLineEdit(centralWidget);
-        lineEdit->setObjectName(QStringLiteral("lineEdit"));
-        lineEdit->setMinimumSize(QSize(0, 21));
-
-        horizontalLayout->addWidget(lineEdit);
-
-        label_2 = new QLabel(centralWidget);
+        label_2 = new QLabel(layoutWidget);
         label_2->setObjectName(QStringLiteral("label_2"));
         label_2->setMinimumSize(QSize(70, 0));
 
         horizontalLayout->addWidget(label_2);
 
-        comboBox = new QComboBox(centralWidget);
+        comboBox = new QComboBox(layoutWidget);
         comboBox->addItem(QString());
         comboBox->addItem(QString());
         comboBox->addItem(QString());
@@ -96,35 +108,149 @@ public:
 
         horizontalLayout->addWidget(comboBox);
 
-        pushButton_2 = new QPushButton(centralWidget);
+        pushButton_2 = new QPushButton(layoutWidget);
         pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
 
         horizontalLayout->addWidget(pushButton_2);
 
-
-        verticalLayout_2->addLayout(horizontalLayout);
-
-        verticalLayout = new QVBoxLayout();
-        verticalLayout->setSpacing(6);
-        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
-        label = new QLabel(centralWidget);
+        tabWidget = new QTabWidget(centralWidget);
+        tabWidget->setObjectName(QStringLiteral("tabWidget"));
+        tabWidget->setGeometry(QRect(0, 30, 1071, 641));
+        tab_1 = new QWidget();
+        tab_1->setObjectName(QStringLiteral("tab_1"));
+        scrollArea = new QScrollArea(tab_1);
+        scrollArea->setObjectName(QStringLiteral("scrollArea"));
+        scrollArea->setGeometry(QRect(0, 0, 1061, 641));
+        scrollArea->setWidgetResizable(true);
+        scrollAreaWidgetContents = new QWidget();
+        scrollAreaWidgetContents->setObjectName(QStringLiteral("scrollAreaWidgetContents"));
+        scrollAreaWidgetContents->setGeometry(QRect(0, -380, 1042, 1019));
+        scrollAreaWidgetContents->setMinimumSize(QSize(0, 1019));
+        label_3 = new QLabel(scrollAreaWidgetContents);
+        label_3->setObjectName(QStringLiteral("label_3"));
+        label_3->setGeometry(QRect(0, 10, 271, 151));
+        label_3->setMaximumSize(QSize(55555, 555555));
+        label_3->setStyleSheet(QLatin1String("background-color: rgb(187, 170, 255);\n"
+"border-image: url(:/lib/2007786.jpg);"));
+        label_5 = new QLabel(scrollAreaWidgetContents);
+        label_5->setObjectName(QStringLiteral("label_5"));
+        label_5->setGeometry(QRect(0, 170, 271, 151));
+        label_5->setMaximumSize(QSize(55555, 555555));
+        label_5->setStyleSheet(QLatin1String("background-color: rgb(187, 170, 255);\n"
+"border-image: url(:/lib/2033165.jpg);"));
+        label_4 = new QLabel(scrollAreaWidgetContents);
+        label_4->setObjectName(QStringLiteral("label_4"));
+        label_4->setGeometry(QRect(280, 10, 491, 311));
+        label_4->setMaximumSize(QSize(55555, 555555));
+        label_4->setStyleSheet(QLatin1String("background-color: rgb(187, 170, 255);\n"
+"border-image: url(:/lib/2038116.jpg);"));
+        label_7 = new QLabel(scrollAreaWidgetContents);
+        label_7->setObjectName(QStringLiteral("label_7"));
+        label_7->setGeometry(QRect(780, 10, 271, 151));
+        label_7->setMaximumSize(QSize(55555, 555555));
+        label_7->setStyleSheet(QLatin1String("background-color: rgb(187, 170, 255);\n"
+"border-image: url(:/lib/2038308.jpg);"));
+        label_6 = new QLabel(scrollAreaWidgetContents);
+        label_6->setObjectName(QStringLiteral("label_6"));
+        label_6->setGeometry(QRect(780, 170, 271, 151));
+        label_6->setMaximumSize(QSize(55555, 555555));
+        label_6->setStyleSheet(QLatin1String("background-color: rgb(187, 170, 255);\n"
+"border-image: url(:/lib/2038121.jpg);"));
+        label_8 = new QLabel(scrollAreaWidgetContents);
+        label_8->setObjectName(QStringLiteral("label_8"));
+        label_8->setGeometry(QRect(0, 330, 491, 311));
+        label_8->setMaximumSize(QSize(55555, 555555));
+        label_8->setStyleSheet(QLatin1String("background-color: rgb(187, 170, 255);\n"
+"border-image: url(:/lib/2038608.jpg);"));
+        label_9 = new QLabel(scrollAreaWidgetContents);
+        label_9->setObjectName(QStringLiteral("label_9"));
+        label_9->setGeometry(QRect(500, 490, 271, 151));
+        label_9->setMaximumSize(QSize(55555, 555555));
+        label_9->setStyleSheet(QLatin1String("background-color: rgb(187, 170, 255);\n"
+"border-image: url(:/lib/2038610.jpg);"));
+        label_10 = new QLabel(scrollAreaWidgetContents);
+        label_10->setObjectName(QStringLiteral("label_10"));
+        label_10->setGeometry(QRect(500, 330, 271, 151));
+        label_10->setMaximumSize(QSize(55555, 555555));
+        label_10->setStyleSheet(QLatin1String("background-color: rgb(187, 170, 255);\n"
+"border-image: url(:/lib/2039758.jpg);"));
+        label_11 = new QLabel(scrollAreaWidgetContents);
+        label_11->setObjectName(QStringLiteral("label_11"));
+        label_11->setGeometry(QRect(780, 330, 271, 151));
+        label_11->setMaximumSize(QSize(55555, 555555));
+        label_11->setStyleSheet(QLatin1String("background-color: rgb(187, 170, 255);\n"
+"border-image: url(:/lib/2039857.jpg);"));
+        label_12 = new QLabel(scrollAreaWidgetContents);
+        label_12->setObjectName(QStringLiteral("label_12"));
+        label_12->setGeometry(QRect(780, 490, 271, 151));
+        label_12->setMaximumSize(QSize(55555, 555555));
+        label_12->setStyleSheet(QLatin1String("background-color: rgb(187, 170, 255);\n"
+"border-image: url(:/lib/2039639.jpg);"));
+        label = new QLabel(scrollAreaWidgetContents);
         label->setObjectName(QStringLiteral("label"));
-        label->setStyleSheet(QStringLiteral(""));
-
-        verticalLayout->addWidget(label);
-
-        verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        verticalLayout->addItem(verticalSpacer);
-
-
-        verticalLayout_2->addLayout(verticalLayout);
-
-        verticalLayout_2->setStretch(0, 1);
-        verticalLayout_2->setStretch(1, 20);
+        label->setGeometry(QRect(390, 20, 341, 300));
+        label->setMinimumSize(QSize(0, 300));
+        label->setStyleSheet(QStringLiteral("background-color: rgb(189, 74, 255);"));
+        label_13 = new QLabel(scrollAreaWidgetContents);
+        label_13->setObjectName(QStringLiteral("label_13"));
+        label_13->setGeometry(QRect(0, 650, 271, 151));
+        label_13->setMaximumSize(QSize(55555, 555555));
+        label_13->setStyleSheet(QStringLiteral("border-image: url(:/lib/2035571.jpg);"));
+        label_14 = new QLabel(scrollAreaWidgetContents);
+        label_14->setObjectName(QStringLiteral("label_14"));
+        label_14->setGeometry(QRect(280, 650, 271, 151));
+        label_14->setMaximumSize(QSize(55555, 555555));
+        label_14->setStyleSheet(QLatin1String("border-image: url(:/lib/2035575.jpg);\n"
+""));
+        label_15 = new QLabel(scrollAreaWidgetContents);
+        label_15->setObjectName(QStringLiteral("label_15"));
+        label_15->setGeometry(QRect(0, 810, 271, 151));
+        label_15->setMaximumSize(QSize(55555, 555555));
+        label_15->setStyleSheet(QStringLiteral("border-image: url(:/lib/2036148.jpg);"));
+        label_16 = new QLabel(scrollAreaWidgetContents);
+        label_16->setObjectName(QStringLiteral("label_16"));
+        label_16->setGeometry(QRect(280, 810, 271, 151));
+        label_16->setMaximumSize(QSize(55555, 555555));
+        label_16->setStyleSheet(QLatin1String("background-color: rgb(187, 170, 255);\n"
+"border-image: url(:/lib/2035655.jpg);\n"
+""));
+        label_17 = new QLabel(scrollAreaWidgetContents);
+        label_17->setObjectName(QStringLiteral("label_17"));
+        label_17->setGeometry(QRect(560, 650, 491, 311));
+        label_17->setMaximumSize(QSize(55555, 555555));
+        label_17->setStyleSheet(QStringLiteral("border-image: url(:/lib/2035706.jpg);"));
+        label_18 = new QLabel(scrollAreaWidgetContents);
+        label_18->setObjectName(QStringLiteral("label_18"));
+        label_18->setGeometry(QRect(0, 962, 1041, 35));
+        label_18->setStyleSheet(QStringLiteral("border-image: url(:/lib/line.png);"));
+        scrollArea->setWidget(scrollAreaWidgetContents);
+        label->raise();
+        label_3->raise();
+        label_5->raise();
+        label_4->raise();
+        label_7->raise();
+        label_6->raise();
+        label_8->raise();
+        label_9->raise();
+        label_10->raise();
+        label_11->raise();
+        label_12->raise();
+        label_13->raise();
+        label_14->raise();
+        label_15->raise();
+        label_16->raise();
+        label_17->raise();
+        label_18->raise();
+        tabWidget->addTab(tab_1, QString());
+        tab_2 = new QWidget();
+        tab_2->setObjectName(QStringLiteral("tab_2"));
+        tabWidget->addTab(tab_2, QString());
         MainWindow->setCentralWidget(centralWidget);
 
         retranslateUi(MainWindow);
+
+        tabWidget->setCurrentIndex(0);
+
 
         QMetaObject::connectSlotsByName(MainWindow);
     } // setupUi
@@ -141,7 +267,25 @@ public:
         comboBox->setItemText(4, QApplication::translate("MainWindow", "\345\261\205\344\270\255", nullptr));
 
         pushButton_2->setText(QApplication::translate("MainWindow", "\344\275\277\347\224\250\345\243\201\347\272\270", nullptr));
+        label_3->setText(QString());
+        label_5->setText(QString());
+        label_4->setText(QString());
+        label_7->setText(QString());
+        label_6->setText(QString());
+        label_8->setText(QString());
+        label_9->setText(QString());
+        label_10->setText(QString());
+        label_11->setText(QString());
+        label_12->setText(QString());
         label->setText(QString());
+        label_13->setText(QString());
+        label_14->setText(QString());
+        label_15->setText(QString());
+        label_16->setText(QString());
+        label_17->setText(QString());
+        label_18->setText(QString());
+        tabWidget->setTabText(tabWidget->indexOf(tab_1), QApplication::translate("MainWindow", "\351\235\231\346\200\201\345\243\201\347\272\270", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "\345\212\250\346\200\201\345\243\201\347\272\270", nullptr));
     } // retranslateUi
 
 };

@@ -1,6 +1,0 @@
-<RCC>
-    <qresource prefix="/">
-        <file>C:/Users/fdog/Desktop/wall.jpg</file>
-        <file>lib/wall.png</file>
-    </qresource>
-</RCC>
