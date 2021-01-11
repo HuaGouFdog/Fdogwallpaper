@@ -36,4 +36,5 @@ FORMS += \
 RESOURCES += \
     lib.qrc
 
+win32:LIBS += -luser32
 

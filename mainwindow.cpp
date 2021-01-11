@@ -3,7 +3,9 @@
 #include <QDir>
 #include<QFileDialog>
 #include<QSettings>
+#include<QSize>
 #include<Windows.h>
+#include<QDebug>
 #if _MSC_VER >= 1600
 #pragma execution_character_set("utf-8")
 #endif
@@ -11,6 +13,8 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
+     backstyle = "10";
+     TileWallpaper = "0";
     ui->setupUi(this);
 }
 
@@ -18,7 +22,6 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
-
 void MainWindow::on_pushButton_clicked()
 {
     QString curPash =QDir::currentPath();
@@ -33,15 +36,36 @@ void MainWindow::on_pushButton_clicked()
           ui->lineEdit_2->setText(fileList.at(i));
           //将文件路径显示在文本框上
       }
-      //用标签显示预览图
+      //设置显示范围在宽500，高300
+      QSize picSize(500,300);
+      //获取图像
       QPixmap background = QPixmap(ui->lineEdit_2->text());
-      //ui->label->setStyleSheet(QString("border-image:url(%1;)").arg(ui->lineEdit_2->text()));
-      ui->label->setPixmap(background);
-      ui->label->resize(background.height(),background.width());
+      //按500:300比例缩放图像
+      QPixmap scaledPixmap = background.scaled(picSize, Qt::KeepAspectRatio);
+      //不按比例缩放 QPixmap scaledPixmap = background.scaled(picSize);
+      //用标签显示预览图
+      ui->label->setPixmap(scaledPixmap);
 }
 
 void MainWindow::on_pushButton_2_clicked()
 {
+    //拉伸是2   适应是6   填充是10   平铺和居中都是0
+      if(ui->comboBox->currentIndex()==0)
+          backstyle = "10";
+      if(ui->comboBox->currentIndex()==1)
+          backstyle = "6";
+      if(ui->comboBox->currentIndex()==2)
+          backstyle = "2";
+      if(ui->comboBox->currentIndex()==3)
+      {
+          backstyle = "0";
+          TileWallpaper = "1";
+      }
+      if(ui->comboBox->currentIndex()==4)
+      {
+          backstyle = "0";
+          TileWallpaper = "0";
+      }
     //壁纸注册表表
     QSettings wallPaper("HKEY_CURRENT_USER\\Control Panel\\Desktop",
                        QSettings::NativeFormat);
@@ -51,9 +75,43 @@ void MainWindow::on_pushButton_2_clicked()
 
     //给壁纸注册表设置新的值（新的图片路径）
     wallPaper.setValue("Wallpaper",path);
+    //设置背景样式
+    qDebug()<<"当前选择：";
+    qDebug()<<backstyle;
+    wallPaper.setValue("WallpaperStyle", backstyle);
+    //因为平铺和居中都是0，而TileWallpaper是判断是否平铺
+    wallPaper.setValue("TileWallpaper",TileWallpaper);
+    wallPaper.sync();
     QByteArray byte = path.toLocal8Bit();
 
     //调用windowsAPI
     SystemParametersInfoA(SPI_SETDESKWALLPAPER,0,byte.data(),SPIF_SENDWININICHANGE|SPIF_UPDATEINIFILE);
 
+}
+
+void MainWindow::on_comboBox_currentIndexChanged(int index)
+{
+//    QSettings wallPaper("HKEY_CURRENT_USER\\Control Panel\\Desktop",
+//                       QSettings::NativeFormat);
+//    //新的桌面图片路径
+//    QString path(ui->lineEdit_2->text());
+
+//    //给壁纸注册表设置新的值（新的图片路径）
+//    wallPaper.setValue("Wallpaper",path);
+//    if(index==0)
+//        wallPaper.setValue("WallpaperStyle", 10);
+//    if(index==1)
+//        wallPaper.setValue("WallpaperStyle", 6);
+//    if(index==2)
+//        wallPaper.setValue("WallpaperStyle", 2);
+//    if(index==3)
+//    {
+//        wallPaper.setValue("WallpaperStyle", 0);
+//        wallPaper.setValue("TileWallpaper",1);
+//    }
+//    if(index==4)
+//    {
+//        wallPaper.setValue("WallpaperStyle", 0);
+//        wallPaper.setValue("TileWallpaper",0);
+//    }
 }

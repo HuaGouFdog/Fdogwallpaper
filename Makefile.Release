@@ -17,7 +17,7 @@ CXXFLAGS      = -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStri
 INCPATH       = -I. -I..\..\QT\5.10.0\msvc2015_64\include -I..\..\QT\5.10.0\msvc2015_64\include\QtWidgets -I..\..\QT\5.10.0\msvc2015_64\include\QtGui -I..\..\QT\5.10.0\msvc2015_64\include\QtANGLE -I..\..\QT\5.10.0\msvc2015_64\include\QtCore -Irelease -I. -I\include -I..\..\QT\5.10.0\msvc2015_64\mkspecs\win32-msvc 
 LINKER        = link
 LFLAGS        = /NOLOGO /DYNAMICBASE /NXCOMPAT /INCREMENTAL:NO /SUBSYSTEM:WINDOWS "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'"
-LIBS          = /LIBPATH:D:\QT\5.10.0\msvc2015_64\lib D:\QT\5.10.0\msvc2015_64\lib\qtmain.lib /LIBPATH:C:\utils\my_sql\my_sql\lib /LIBPATH:C:\utils\postgresql\pgsql\lib shell32.lib D:\QT\5.10.0\msvc2015_64\lib\Qt5Widgets.lib D:\QT\5.10.0\msvc2015_64\lib\Qt5Gui.lib D:\QT\5.10.0\msvc2015_64\lib\Qt5Core.lib 
+LIBS          = /LIBPATH:D:\QT\5.10.0\msvc2015_64\lib D:\QT\5.10.0\msvc2015_64\lib\qtmain.lib /LIBPATH:C:\utils\my_sql\my_sql\lib /LIBPATH:C:\utils\postgresql\pgsql\lib shell32.lib user32.lib D:\QT\5.10.0\msvc2015_64\lib\Qt5Widgets.lib D:\QT\5.10.0\msvc2015_64\lib\Qt5Gui.lib D:\QT\5.10.0\msvc2015_64\lib\Qt5Core.lib 
 QMAKE         = D:\QT\5.10.0\msvc2015_64\bin\qmake.exe
 IDC           = idc
 IDL           = midl /NOLOGO

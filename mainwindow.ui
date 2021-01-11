@@ -6,12 +6,28 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>258</height>
+    <width>1119</width>
+    <height>672</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1119</width>
+    <height>672</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1119</width>
+    <height>672</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>花狗Fdog壁纸</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>lib/wall.png</normaloff>lib/wall.png</iconset>
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,20">
@@ -53,6 +69,64 @@
        </widget>
       </item>
       <item>
+       <widget class="QLineEdit" name="lineEdit">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>21</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="minimumSize">
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>选择契合度：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboBox">
+        <property name="minimumSize">
+         <size>
+          <width>78</width>
+          <height>22</height>
+         </size>
+        </property>
+        <item>
+         <property name="text">
+          <string>填充</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>适应</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>拉伸</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>平铺</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>居中</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
        <widget class="QPushButton" name="pushButton_2">
         <property name="text">
          <string>使用壁纸</string>
@@ -72,6 +146,19 @@
          <string/>
         </property>
        </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
       </item>
      </layout>
     </item>
