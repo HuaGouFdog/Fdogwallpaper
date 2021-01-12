@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-
+#include <QSignalMapper>
 namespace Ui {
 class MainWindow;
 }
@@ -16,13 +16,16 @@ public:
     ~MainWindow();
     QString backstyle;
     QString TileWallpaper;
+    QSignalMapper * myMapper;
+
 
 private slots:
+    void setPushButton(int index);
     void on_pushButton_clicked();
 
     void on_pushButton_2_clicked();
 
-    void on_comboBox_currentIndexChanged(int index);
+    void on_pushButton_3_clicked();
 
 private:
     Ui::MainWindow *ui;

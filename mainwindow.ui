@@ -6,19 +6,19 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1068</width>
+    <width>1071</width>
     <height>672</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>1068</width>
+    <width>1071</width>
     <height>672</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>1064</width>
+    <width>1075</width>
     <height>672</height>
    </size>
   </property>
@@ -35,7 +35,7 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>1061</width>
+      <width>1071</width>
       <height>31</height>
      </rect>
     </property>
@@ -122,7 +122,7 @@
      <rect>
       <x>0</x>
       <y>30</y>
-      <width>1071</width>
+      <width>1081</width>
       <height>641</height>
      </rect>
     </property>
@@ -138,7 +138,7 @@
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>1061</width>
+        <width>1070</width>
         <height>641</height>
        </rect>
       </property>
@@ -149,8 +149,8 @@
        <property name="geometry">
         <rect>
          <x>0</x>
-         <y>-380</y>
-         <width>1042</width>
+         <y>0</y>
+         <width>1051</width>
          <height>1019</height>
         </rect>
        </property>
@@ -160,236 +160,6 @@
          <height>1019</height>
         </size>
        </property>
-       <widget class="QLabel" name="label_3">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>10</y>
-          <width>271</width>
-          <height>151</height>
-         </rect>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>55555</width>
-          <height>555555</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(187, 170, 255);
-border-image: url(:/lib/2007786.jpg);</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_5">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>170</y>
-          <width>271</width>
-          <height>151</height>
-         </rect>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>55555</width>
-          <height>555555</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(187, 170, 255);
-border-image: url(:/lib/2033165.jpg);</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_4">
-        <property name="geometry">
-         <rect>
-          <x>280</x>
-          <y>10</y>
-          <width>491</width>
-          <height>311</height>
-         </rect>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>55555</width>
-          <height>555555</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(187, 170, 255);
-border-image: url(:/lib/2038116.jpg);</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_7">
-        <property name="geometry">
-         <rect>
-          <x>780</x>
-          <y>10</y>
-          <width>271</width>
-          <height>151</height>
-         </rect>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>55555</width>
-          <height>555555</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(187, 170, 255);
-border-image: url(:/lib/2038308.jpg);</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_6">
-        <property name="geometry">
-         <rect>
-          <x>780</x>
-          <y>170</y>
-          <width>271</width>
-          <height>151</height>
-         </rect>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>55555</width>
-          <height>555555</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(187, 170, 255);
-border-image: url(:/lib/2038121.jpg);</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_8">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>330</y>
-          <width>491</width>
-          <height>311</height>
-         </rect>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>55555</width>
-          <height>555555</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(187, 170, 255);
-border-image: url(:/lib/2038608.jpg);</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_9">
-        <property name="geometry">
-         <rect>
-          <x>500</x>
-          <y>490</y>
-          <width>271</width>
-          <height>151</height>
-         </rect>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>55555</width>
-          <height>555555</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(187, 170, 255);
-border-image: url(:/lib/2038610.jpg);</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_10">
-        <property name="geometry">
-         <rect>
-          <x>500</x>
-          <y>330</y>
-          <width>271</width>
-          <height>151</height>
-         </rect>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>55555</width>
-          <height>555555</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(187, 170, 255);
-border-image: url(:/lib/2039758.jpg);</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_11">
-        <property name="geometry">
-         <rect>
-          <x>780</x>
-          <y>330</y>
-          <width>271</width>
-          <height>151</height>
-         </rect>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>55555</width>
-          <height>555555</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(187, 170, 255);
-border-image: url(:/lib/2039857.jpg);</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_12">
-        <property name="geometry">
-         <rect>
-          <x>780</x>
-          <y>490</y>
-          <width>271</width>
-          <height>151</height>
-         </rect>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>55555</width>
-          <height>555555</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(187, 170, 255);
-border-image: url(:/lib/2039639.jpg);</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
        <widget class="QLabel" name="label">
         <property name="geometry">
          <rect>
@@ -412,125 +182,12 @@ border-image: url(:/lib/2039639.jpg);</string>
          <string/>
         </property>
        </widget>
-       <widget class="QLabel" name="label_13">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>650</y>
-          <width>271</width>
-          <height>151</height>
-         </rect>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>55555</width>
-          <height>555555</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">border-image: url(:/lib/2035571.jpg);</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_14">
-        <property name="geometry">
-         <rect>
-          <x>280</x>
-          <y>650</y>
-          <width>271</width>
-          <height>151</height>
-         </rect>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>55555</width>
-          <height>555555</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">border-image: url(:/lib/2035575.jpg);
-</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_15">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>810</y>
-          <width>271</width>
-          <height>151</height>
-         </rect>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>55555</width>
-          <height>555555</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">border-image: url(:/lib/2036148.jpg);</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_16">
-        <property name="geometry">
-         <rect>
-          <x>280</x>
-          <y>810</y>
-          <width>271</width>
-          <height>151</height>
-         </rect>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>55555</width>
-          <height>555555</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(187, 170, 255);
-border-image: url(:/lib/2035655.jpg);
-</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_17">
-        <property name="geometry">
-         <rect>
-          <x>560</x>
-          <y>650</y>
-          <width>491</width>
-          <height>311</height>
-         </rect>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>55555</width>
-          <height>555555</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">border-image: url(:/lib/2035706.jpg);</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
        <widget class="QLabel" name="label_18">
         <property name="geometry">
          <rect>
           <x>0</x>
           <y>962</y>
-          <width>1041</width>
+          <width>1051</width>
           <height>35</height>
          </rect>
         </property>
@@ -541,23 +198,247 @@ border-image: url(:/lib/2035655.jpg);
          <string/>
         </property>
        </widget>
-       <zorder>label</zorder>
-       <zorder>label_3</zorder>
-       <zorder>label_5</zorder>
-       <zorder>label_4</zorder>
-       <zorder>label_7</zorder>
-       <zorder>label_6</zorder>
-       <zorder>label_8</zorder>
-       <zorder>label_9</zorder>
-       <zorder>label_10</zorder>
-       <zorder>label_11</zorder>
-       <zorder>label_12</zorder>
-       <zorder>label_13</zorder>
-       <zorder>label_14</zorder>
-       <zorder>label_15</zorder>
-       <zorder>label_16</zorder>
-       <zorder>label_17</zorder>
-       <zorder>label_18</zorder>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>10</y>
+          <width>271</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/lib/2007786.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>170</y>
+          <width>271</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/lib/2033165.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>10</y>
+          <width>491</width>
+          <height>311</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/lib/2038116.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_6">
+        <property name="geometry">
+         <rect>
+          <x>780</x>
+          <y>10</y>
+          <width>271</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/lib/2038121.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_7">
+        <property name="geometry">
+         <rect>
+          <x>780</x>
+          <y>170</y>
+          <width>271</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/lib/2038308.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_8">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>330</y>
+          <width>271</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/lib/2039758.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_9">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>490</y>
+          <width>271</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/lib/2038610.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_10">
+        <property name="geometry">
+         <rect>
+          <x>780</x>
+          <y>490</y>
+          <width>271</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/lib/2039639.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_11">
+        <property name="geometry">
+         <rect>
+          <x>780</x>
+          <y>330</y>
+          <width>271</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/lib/2039857.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_12">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>650</y>
+          <width>271</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/lib/2035571.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_13">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>810</y>
+          <width>271</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/lib/2036148.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_14">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>810</y>
+          <width>271</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/lib/2035655.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_15">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>650</y>
+          <width>271</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/lib/2035575.jpg);
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_16">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>330</y>
+          <width>491</width>
+          <height>311</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/lib/2038608.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_17">
+        <property name="geometry">
+         <rect>
+          <x>560</x>
+          <y>650</y>
+          <width>491</width>
+          <height>311</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/lib/2035706.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
       </widget>
      </widget>
     </widget>

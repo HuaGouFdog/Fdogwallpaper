@@ -289,6 +289,8 @@ release\moc_mainwindow.cpp: ..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\QMainW
 		..\..\QT\5.10.0\msvc2015_64\include\QtGui\qtouchdevice.h \
 		..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\qtabwidget.h \
 		..\..\QT\5.10.0\msvc2015_64\include\QtGui\qicon.h \
+		..\..\QT\5.10.0\msvc2015_64\include\QtCore\QSignalMapper \
+		..\..\QT\5.10.0\msvc2015_64\include\QtCore\qsignalmapper.h \
 		mainwindow.h \
 		release\moc_predefs.h \
 		..\..\QT\5.10.0\msvc2015_64\bin\moc.exe
@@ -424,6 +426,8 @@ release\main.obj: main.cpp mainwindow.h \
 		..\..\QT\5.10.0\msvc2015_64\include\QtGui\qtouchdevice.h \
 		..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\qtabwidget.h \
 		..\..\QT\5.10.0\msvc2015_64\include\QtGui\qicon.h \
+		..\..\QT\5.10.0\msvc2015_64\include\QtCore\QSignalMapper \
+		..\..\QT\5.10.0\msvc2015_64\include\QtCore\qsignalmapper.h \
 		..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\QApplication \
 		..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\qapplication.h \
 		..\..\QT\5.10.0\msvc2015_64\include\QtCore\qcoreapplication.h \
@@ -539,6 +543,8 @@ release\mainwindow.obj: mainwindow.cpp mainwindow.h \
 		..\..\QT\5.10.0\msvc2015_64\include\QtGui\qtouchdevice.h \
 		..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\qtabwidget.h \
 		..\..\QT\5.10.0\msvc2015_64\include\QtGui\qicon.h \
+		..\..\QT\5.10.0\msvc2015_64\include\QtCore\QSignalMapper \
+		..\..\QT\5.10.0\msvc2015_64\include\QtCore\qsignalmapper.h \
 		ui_mainwindow.h \
 		..\..\QT\5.10.0\msvc2015_64\include\QtCore\QVariant \
 		..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\QAction \
