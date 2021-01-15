@@ -3,6 +3,9 @@
 
 #include <QMainWindow>
 #include <QSignalMapper>
+#include<Windows.h>
+#include<QLabel>
+#include"dynamicwallpaper.h"
 namespace Ui {
 class MainWindow;
 }
@@ -17,8 +20,7 @@ public:
     QString backstyle;
     QString TileWallpaper;
     QSignalMapper * myMapper;
-
-
+    Dynamicwallpaper * wallpaper;
 private slots:
     void setPushButton(int index);
     void on_pushButton_clicked();
@@ -26,6 +28,8 @@ private slots:
     void on_pushButton_2_clicked();
 
     void on_pushButton_3_clicked();
+
+    void on_pushButton_18_clicked();
 
 private:
     Ui::MainWindow *ui;

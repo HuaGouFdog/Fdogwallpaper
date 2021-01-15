@@ -25,13 +25,16 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+    dynamicwallpaper.cpp
 
 HEADERS += \
-        mainwindow.h
+        mainwindow.h \
+    dynamicwallpaper.h
 
 FORMS += \
-        mainwindow.ui
+        mainwindow.ui \
+    dynamicwallpaper.ui
 
 RESOURCES += \
     walllib.qrc

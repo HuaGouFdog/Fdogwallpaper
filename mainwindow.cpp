@@ -34,6 +34,8 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+
+
 void MainWindow::setPushButton(int index)
 {
     QString image_array[15]={"2007786.jpg","2033165.jpg","2038116.jpg","2038121.jpg","2038308.jpg",
@@ -133,4 +135,10 @@ void MainWindow::on_pushButton_3_clicked()
     wallPaper.setValue("Wallpaper",path);
     QByteArray byte = path.toLocal8Bit();
     SystemParametersInfoA(SPI_SETDESKWALLPAPER,0,byte.data(),SPIF_SENDWININICHANGE|SPIF_UPDATEINIFILE);
+}
+
+void MainWindow::on_pushButton_18_clicked()
+{
+    this->wallpaper = new Dynamicwallpaper;
+   this->wallpaper->show();
 }

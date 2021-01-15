@@ -37,6 +37,7 @@ public:
     QLabel *label_2;
     QComboBox *comboBox;
     QPushButton *pushButton_2;
+    QPushButton *pushButton_18;
     QTabWidget *tabWidget;
     QWidget *tab_1;
     QScrollArea *scrollArea;
@@ -58,20 +59,22 @@ public:
     QPushButton *pushButton_15;
     QPushButton *pushButton_16;
     QPushButton *pushButton_17;
+    QLabel *label_3;
     QWidget *tab_2;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(1071, 672);
-        MainWindow->setMinimumSize(QSize(1071, 672));
+        MainWindow->resize(1071, 669);
+        MainWindow->setMinimumSize(QSize(1071, 669));
         MainWindow->setMaximumSize(QSize(1075, 672));
         QIcon icon;
         icon.addFile(QStringLiteral("lib/wall.png"), QSize(), QIcon::Normal, QIcon::Off);
         MainWindow->setWindowIcon(icon);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
+        centralWidget->setStyleSheet(QStringLiteral(""));
         layoutWidget = new QWidget(centralWidget);
         layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
         layoutWidget->setGeometry(QRect(0, 0, 1071, 31));
@@ -112,6 +115,11 @@ public:
         pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
 
         horizontalLayout->addWidget(pushButton_2);
+
+        pushButton_18 = new QPushButton(layoutWidget);
+        pushButton_18->setObjectName(QStringLiteral("pushButton_18"));
+
+        horizontalLayout->addWidget(pushButton_18);
 
         tabWidget = new QTabWidget(centralWidget);
         tabWidget->setObjectName(QStringLiteral("tabWidget"));
@@ -196,7 +204,29 @@ public:
         pushButton_17->setObjectName(QStringLiteral("pushButton_17"));
         pushButton_17->setGeometry(QRect(560, 650, 491, 311));
         pushButton_17->setStyleSheet(QStringLiteral("border-image: url(:/lib/2035706.jpg);"));
+        label_3 = new QLabel(scrollAreaWidgetContents);
+        label_3->setObjectName(QStringLiteral("label_3"));
+        label_3->setGeometry(QRect(0, 0, 1051, 961));
+        label_3->setStyleSheet(QStringLiteral("background-color: rgb(142, 216, 255);"));
         scrollArea->setWidget(scrollAreaWidgetContents);
+        label_3->raise();
+        label->raise();
+        label_18->raise();
+        pushButton_3->raise();
+        pushButton_4->raise();
+        pushButton_5->raise();
+        pushButton_6->raise();
+        pushButton_7->raise();
+        pushButton_8->raise();
+        pushButton_9->raise();
+        pushButton_10->raise();
+        pushButton_11->raise();
+        pushButton_12->raise();
+        pushButton_13->raise();
+        pushButton_14->raise();
+        pushButton_15->raise();
+        pushButton_16->raise();
+        pushButton_17->raise();
         tabWidget->addTab(tab_1, QString());
         tab_2 = new QWidget();
         tab_2->setObjectName(QStringLiteral("tab_2"));
@@ -223,6 +253,7 @@ public:
         comboBox->setItemText(4, QApplication::translate("MainWindow", "\345\261\205\344\270\255", nullptr));
 
         pushButton_2->setText(QApplication::translate("MainWindow", "\344\275\277\347\224\250\345\243\201\347\272\270", nullptr));
+        pushButton_18->setText(QApplication::translate("MainWindow", "\345\212\250\346\200\201\345\243\201\347\272\270", nullptr));
         label->setText(QString());
         label_18->setText(QString());
         pushButton_3->setText(QString());
@@ -240,6 +271,7 @@ public:
         pushButton_15->setText(QString());
         pushButton_16->setText(QString());
         pushButton_17->setText(QString());
+        label_3->setText(QString());
         tabWidget->setTabText(tabWidget->indexOf(tab_1), QApplication::translate("MainWindow", "\351\235\231\346\200\201\345\243\201\347\272\270", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "\345\212\250\346\200\201\345\243\201\347\272\270", nullptr));
     } // retranslateUi
